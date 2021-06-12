@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- sidebar section start-------------------------------------------- -->
+      <section class="sideBar" id="sideBar">
+        <h2 class="logo" id="logo">accusoht</h2>
+        <div class="link">
+          <ul>
+            <li>
+              <span class="Icons"> <i class="fas fa-columns"></i></span>
+              <span class="sideBarSpan">dashboard</span>
+            </li>
+            <li>
+              <span class="Icons"><i class="fas fa-users"></i></span>
+              <span class="sideBarSpan"> customers</span>
+            </li>
+            <li>
+              <span class="Icons"> <i class="fas fa-clipboard-list"></i></span>
+              <span class="sideBarSpan"> projects</span>
+            </li>
+            <li>
+              <span class="Icons"><i class="fas fa-shopping-bag"></i></span>
+              <span class="sideBarSpan"> orders</span>
+            </li>
+            <li>
+              <span class="Icons"> <i class="fas fa-boxes"></i></span>
+              <span class="sideBarSpan">inventory</span>
+            </li>
+            <li>
+              <span class="Icons"> <i class="fas fa-user-circle"></i></span>
+              <span class="sideBarSpan">accounts</span>
+            </li>
+            <li>
+              <span class="Icons"><i class="fas fa-clipboard-list"></i></span>
+              <span class="sideBarSpan"> tasks</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- sidebar section end-------------------------------------------- -->
+
+      <div class="mainContent" id="mainContent">
+        <!-- navbar section start------------------------------------- -->
+
+        <div class="header" id="header">
+          <div class="left">
+            <i class="fas fa-bars fa-2x bar" id="bar"></i>
+            <h2>dashboard</h2>
+          </div>
+          <div class="search">
+            <i class="fas fa-search searchIcon"></i>
+            <input type="text" placeholder="Search..." autocomplete="off" />
+          </div>
+          <div class="right">
+            <div class="imgDiv">
+              <img
+                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="adminImg"
+              />
+            </div>
+            <div class="intro">
+              <h3>John Doe</h3>
+              <p>Super Admin</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- navbar section end------------------------------------- -->
+
+        <div class="main">
+          <!-- cardsection start---------------------------------------- -->
+
+          <div class="cardDiv">
+            <div class="card">
+              <div class="info">
+                <h1>54</h1>
+                <p>customers</p>
+              </div>
+              <i class="fas fa-users fa-2x"></i>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h1>79</h1>
+                <p>projects</p>
+              </div>
+              <i class="fas fa-clipboard-list fa-2x"></i>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h1>124</h1>
+                <p>orders</p>
+              </div>
+              <i class="fas fa-shopping-bag fa-2x"></i>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h1>$6k</h1>
+                <p>income</p>
+              </div>
+              <i class="fab fa-google-wallet fa-2x"></i>
+            </div>
+          </div>
+
+          <!-- cardsection end---------------------------------------- -->
+
+          <!-- recentProject section start--------------------------- -->
+
+          <div class="projDiv">
+            <div class="recentProj">
+              <div class="top">
+                <h2>recent projects</h2>
+                <button type="button" class="btn">see all</button>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <td>Project Title</td>
+                    <td>Department</td>
+                    <td>Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>UI/UX</td>
+                    <td>UI Team</td>
+                    <td><span class="status review"></span> review</td>
+                  </tr>
+                  <tr>
+                    <td>Web Design</td>
+                    <td>Frontend</td>
+                    <td><span class="status inprogress"></span> inprogress</td>
+                  </tr>
+                  <tr>
+                    <td>Ushop App</td>
+                    <td>Mobile Team</td>
+                    <td><span class="status pending"></span>pending</td>
+                  </tr>
+                  <tr>
+                    <td>UI/UX</td>
+                    <td>UI Team</td>
+                    <td><span class="status review"></span> review</td>
+                  </tr>
+                  <tr>
+                    <td>Web Design</td>
+                    <td>Frontend</td>
+                    <td><span class="status inprogress"></span> inprogress</td>
+                  </tr>
+                  <tr>
+                    <td>Ushop App</td>
+                    <td>Mobile Team</td>
+                    <td><span class="status pending"></span>pending</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="customers">
+              <div class="top">
+                <h2>New customers</h2>
+                <button type="button" class="btn">see all</button>
+              </div>
+              <div class="customerDiv">
+                <div class="infoDiv">
+                  <img
+                    src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="adminImg"
+                  />
+                  <div class="about">
+                    <h3>John Doe</h3>
+                    <p>SEO Expert</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-user-circle"></i>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-phone"></i>
+                </div>
+              </div>
+              <div class="customerDiv">
+                <div class="infoDiv">
+                  <img
+                    src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="adminImg"
+                  />
+                  <div class="about">
+                    <h3>John Doe</h3>
+                    <p>SEO Expert</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-user-circle"></i>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-phone"></i>
+                </div>
+              </div>
+              <div class="customerDiv">
+                <div class="infoDiv">
+                  <img
+                    src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="adminImg"
+                  />
+                  <div class="about">
+                    <h3>John Doe</h3>
+                    <p>SEO Expert</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-user-circle"></i>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-phone"></i>
+                </div>
+              </div>
+              <div class="customerDiv">
+                <div class="infoDiv">
+                  <img
+                    src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="adminImg"
+                  />
+                  <div class="about">
+                    <h3>John Doe</h3>
+                    <p>SEO Expert</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-user-circle"></i>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-phone"></i>
+                </div>
+              </div>
+              <div class="customerDiv">
+                <div class="infoDiv">
+                  <img
+                    src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="adminImg"
+                  />
+                  <div class="about">
+                    <h3>John Doe</h3>
+                    <p>SEO Expert</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-user-circle"></i>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-phone"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- recentProject section end--------------------------- -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

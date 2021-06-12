@@ -1,0 +1,66 @@
+.sideBar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  #{$b}-#{$c}: lighten($mainColor, 5%);
+  z-index: 100;
+  .logo {
+    @include textTransnform;
+    #{$c}: $whiteColor;
+    #{$f}-size: $font-lg;
+    margin: 1rem 2rem;
+  }
+  ul {
+    padding-right: 10px;
+    li {
+      cursor: pointer;
+      padding: 5px 10px;
+      width: 100%;
+      @include textTransnform;
+      #{$f}-size: $font-md;
+      #{$c}: $whiteColor;
+      text-align: left;
+      margin-top: 2.2rem;
+      &:hover {
+        #{$b}-#{$c}: $whiteColor;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        #{$c}: $mainColor;
+      }
+
+      span {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .sideBar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100px;
+    z-index: 200;
+    .logo {
+      margin-top: 6rem !important;
+      margin-left: 8rem !important;
+      #{$f}-size: $font-md;
+    }
+    ul {
+      padding-left: 80px;
+      li {
+        text-align: left;
+        margin-top: 1rem !important;
+        .sideBarSpan {
+          #{$f}-size: $font-sm;
+        }
+        .Icons {
+          display: none;
+        }
+      }
+    }
+  }
+}

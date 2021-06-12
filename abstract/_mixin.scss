@@ -1,0 +1,54 @@
+@mixin textTransnform {
+  text-transform: capitalize;
+  list-style: none;
+}
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+@mixin grid_2 {
+  display: grid;
+  grid-template-columns: 67% auto;
+  grid-gap: 2rem;
+}
+
+@mixin btn {
+  @include textTransnform;
+  #{$f}-size: $font-sm;
+  padding: 5px 10px;
+  #{$b}-#{$c}: $mainColor;
+  #{$c}: $whiteColor;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+@mixin top {
+  .top {
+    @include flex;
+    padding: 10px 20px;
+    h2 {
+      @include textTransnform;
+    }
+    .btn {
+      @include btn;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@mixin styling {
+  #{$b}-#{$c}: $whiteColor;
+  border-radius: 10px;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.6);
+}

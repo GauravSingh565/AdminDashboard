@@ -1,0 +1,192 @@
+.projDiv {
+  @include grid_2;
+  margin-top: 3rem;
+  .recentProj {
+    @include styling;
+    @include top;
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0px;
+      thead {
+        border-top: 1px solid $greyColor;
+        border-bottom: 1px solid $greyColor;
+        tr {
+          td {
+            padding: 5px 20px;
+            #{$f}-size: $font-sm;
+            #{$f}-weight: 600;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            padding: 15px 20px;
+            #{$f}-size: $font-sm;
+            position: relative;
+            .review {
+              #{$b}-#{$c}: $mainColor;
+            }
+            .inprogress {
+              #{$b}-#{$c}: $purple;
+            }
+            .pending {
+              #{$b}-#{$c}: $orange;
+            }
+
+            .status {
+              position: absolute;
+              height: 12px;
+              top: 22px;
+              right: 93%;
+              width: 12px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customers {
+    @include styling;
+    @include top;
+
+    margin-right: 2rem;
+    .top {
+      border-bottom: 1px solid $greyColor;
+    }
+    .customerDiv {
+      @include flex;
+      padding: 10px 15px;
+      .infoDiv {
+        @include flex;
+        img {
+          height: 40px;
+          border-radius: 50%;
+          width: 40px;
+          margin-right: 1rem;
+        }
+        .about {
+          text-align: left;
+          p {
+            #{$c}: $greyColor;
+            #{$f}-weight: 600;
+          }
+        }
+      }
+      .icons {
+        i {
+          #{$c}: $mainColor;
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .projDiv {
+    grid-template-columns: 56% 44%;
+  }
+  .customers {
+    height: 390px !important;
+    .about {
+      p {
+        #{$f}-size: 0.9rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .projDiv {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 431px) {
+  .recentProj {
+    .top {
+      padding: 10px 15px !important;
+    }
+    width: 360px !important;
+
+    .top {
+      h2 {
+        #{$f}-size: $font-sm !important;
+      }
+      .btn {
+        #{$f}-size: 1rem !important;
+      }
+    }
+    .table {
+      width: 20% !important;
+      thead {
+        tr {
+          td {
+            #{$f}-size: 1rem !important;
+            padding: 5px 27px !important ;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            #{$f}-size: 1rem !important;
+            padding: 5px 27px !important ;
+            .status {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customers {
+    .top {
+      h2 {
+        #{$f}-size: $font-sm !important;
+      }
+      .btn {
+        #{$f}-size: 1rem !important;
+      }
+    }
+    .customerDiv {
+      .about {
+        h3 {
+          #{$f}-size: $font-sm !important;
+        }
+        p {
+          #{$f}-size: 0.9rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 401px) {
+  .recentProj {
+    width: 330px !important;
+    .table {
+      width: 0 !important;
+      thead {
+        tr {
+          td {
+            font-size: 0.9rem !important;
+            padding: 5px 23px !important ;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            padding-left: 23px !important;
+          }
+        }
+      }
+    }
+  }
+}
